@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/recepty/static/css/main.ddf89f4b.chunk.css",
-    "main.js": "/recepty/static/js/main.ef4bd691.chunk.js",
-    "main.js.map": "/recepty/static/js/main.ef4bd691.chunk.js.map",
+    "main.js": "/recepty/static/js/main.aaa15189.chunk.js",
+    "main.js.map": "/recepty/static/js/main.aaa15189.chunk.js.map",
     "runtime-main.js": "/recepty/static/js/runtime-main.c9b7d877.js",
     "runtime-main.js.map": "/recepty/static/js/runtime-main.c9b7d877.js.map",
     "static/css/2.b69f272b.chunk.css": "/recepty/static/css/2.b69f272b.chunk.css",
-    "static/js/2.ee8b4bd1.chunk.js": "/recepty/static/js/2.ee8b4bd1.chunk.js",
-    "static/js/2.ee8b4bd1.chunk.js.map": "/recepty/static/js/2.ee8b4bd1.chunk.js.map",
+    "static/js/2.25b054f5.chunk.js": "/recepty/static/js/2.25b054f5.chunk.js",
+    "static/js/2.25b054f5.chunk.js.map": "/recepty/static/js/2.25b054f5.chunk.js.map",
     "index.html": "/recepty/index.html",
-    "precache-manifest.b1a701d50234d5f723c0ed3f4aa27840.js": "/recepty/precache-manifest.b1a701d50234d5f723c0ed3f4aa27840.js",
+    "precache-manifest.aa9839a688cfa7efefab5193a767f7f9.js": "/recepty/precache-manifest.aa9839a688cfa7efefab5193a767f7f9.js",
     "service-worker.js": "/recepty/service-worker.js",
     "static/css/2.b69f272b.chunk.css.map": "/recepty/static/css/2.b69f272b.chunk.css.map",
     "static/css/main.ddf89f4b.chunk.css.map": "/recepty/static/css/main.ddf89f4b.chunk.css.map",
-    "static/js/2.ee8b4bd1.chunk.js.LICENSE.txt": "/recepty/static/js/2.ee8b4bd1.chunk.js.LICENSE.txt"
+    "static/js/2.25b054f5.chunk.js.LICENSE.txt": "/recepty/static/js/2.25b054f5.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c9b7d877.js",
     "static/css/2.b69f272b.chunk.css",
-    "static/js/2.ee8b4bd1.chunk.js",
+    "static/js/2.25b054f5.chunk.js",
     "static/css/main.ddf89f4b.chunk.css",
-    "static/js/main.ef4bd691.chunk.js"
+    "static/js/main.aaa15189.chunk.js"
   ]
 }
