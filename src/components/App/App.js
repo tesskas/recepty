@@ -1,30 +1,20 @@
 import React from 'react';
 import List from "../List/List";
-import {callApi, parse} from '../../api';
 import Form from "../Form/Form";
 import Detail from "../Detail/Detail";
-
-import {
-    BrowserRouter as Router,
-    Link,
-    Route,
-    Switch,
-} from 'react-router-dom';
+import {BrowserRouter as Router, Link} from 'react-router-dom';
 
 class App extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-            foods: [],
-            go: ""
+            foods: []
         }
-        callApi("/").then(data => {this.setState({go: parse(data)})})
     }
 
     render(){
         return(
             <Router>
-                <h1>{this.state.go}</h1>
                 <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03"
                             aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">

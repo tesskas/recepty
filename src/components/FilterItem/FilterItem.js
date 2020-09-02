@@ -56,9 +56,9 @@ class FilterItem extends React.Component{
                     <div id="filter" className={styles.choice + " invisible filter"} ref={this.choice}>
                         {
                             this.props.list !== null &&
-                            this.props.list.map(item => {
+                            this.props.list.map((item,x) => {
                                 return(
-                                    <div className="form-check">
+                                    <div key={x} className="form-check">
                                         <input data-name={item} type="checkbox" className="form-check-input" onChange={this.filter}/>
                                         <label className="form-check-label">{item}</label>
                                     </div>

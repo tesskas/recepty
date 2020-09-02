@@ -22,7 +22,8 @@ class List extends React.Component{
                 return getByCategory(data, this.props.match.params.category);
             })
             .then( data => {
-                this.setState({foods: data})
+                console.log(data)
+                this.setState({ foods: data})
             });
     }
 
@@ -32,7 +33,7 @@ class List extends React.Component{
     }
 
     update(data){
-        this.setState({foods: data})
+        //this.setState({foods: data})
     }
 
     componentDidUpdate(prevProps) {
@@ -58,16 +59,16 @@ class List extends React.Component{
                     <tbody>
                     {
                         this.state.foods != null &&
-                        this.state.foods.map(f => {
+                        this.state.foods.map((f,x) => {
                             return(
-                                <tr>
+                                <tr key={x}>
                                     <td>{f.Name}</td>
                                     <td>{f.Category}</td>
                                     <td>
                                         <div className="ingredience-list">
                                             {
-                                                f.Ingrediences != undefined &&
-                                                f.Ingrediences.map(i => <label className={styles.ingredience + " btn-sm btn-info"}>{i.Name}</label>)
+                                                f.Ingrediences !== undefined &&
+                                                f.Ingrediences.map((i,x) => <label key={x} className={styles.ingredience + " btn-sm btn-info"}>{i.Name}</label>)
                                             }
                                         </div>
                                     </td>
