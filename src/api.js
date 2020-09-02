@@ -1,5 +1,6 @@
 export const parse = (data) => {
-    return JSON.parse(data.content)
+    //return JSON.parse(data.content)
+    return data.content
 }
 
 export async function callApi(path){
