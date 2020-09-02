@@ -1,0 +1,23 @@
+
+.ingredience{
+    margin-right: 8px;
+}
+
+th:nth-child(1){
+    width: 15%;
+}
+th:nth-child(2){
+    width: 12%;
+}
+th:nth-child(3){
+    width: 40%;
+}
+th:nth-child(4){
+    width: 23%;
+}
+td:nth-child(5){
+    display: flex;
+}
+td > button{
+    margin-left: 8px;
+}
