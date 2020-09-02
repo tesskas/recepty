@@ -9,7 +9,7 @@ export async function callApi(path){
             //console.log("JSON: " + data.content);
             return data.content;
         });*/
-    let response = await fetch(path);
+    let response = await fetch("https://damp-springs-19376.herokuapp.com" + path);
     let data = await response.json()
     return data;
 }
