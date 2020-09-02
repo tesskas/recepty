@@ -35,6 +35,7 @@ class App extends React.Component{
         return(
             <Router>
                 <h1>{this.state.go}</h1>
+            <h1>Změna</h1>
                 <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03"
                             aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
