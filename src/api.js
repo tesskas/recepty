@@ -1,8 +1,8 @@
-const parse = (data) => {
+export const parse = (data) => {
     return JSON.parse(data.content)
 }
 
-async function callApi(path){
+export async function callApi(path){
     /*fetch(path)
         .then(async response => {
             const data = await response.json();
@@ -63,4 +63,3 @@ export async function getFilterList(name){
     let data = await callApi("/filter/" + name)
     return data.content;
 }
-
