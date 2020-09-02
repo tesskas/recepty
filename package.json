@@ -2,7 +2,7 @@
   "name": "cook",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tesskas.github.io/testing-react-app",
+  "homepage": "https://tesskas.github.io/recepty",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
     "@fortawesome/free-brands-svg-icons": "^5.14.0",
