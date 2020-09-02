@@ -2,7 +2,7 @@
   "name": "cook",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://tesskas.github.io/testing-react-app",
+  "homepage": "https://tesskas.github.io/testing-react-app",
 
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
@@ -22,13 +22,10 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "server": "go run D:/programky/cook/go/main.go",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build"
   },
   "proxy": "http://localhost:8080",
   "eslintConfig": {
