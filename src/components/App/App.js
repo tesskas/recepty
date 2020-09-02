@@ -2,8 +2,7 @@ import React from 'react';
 import List from "../List/List";
 import Form from "../Form/Form";
 import Detail from "../Detail/Detail";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import {BrowserRouter as Router, Link} from 'react-router-dom';
+import {BrowserRouter as Router, Link, Switch, Route} from 'react-router-dom';
 
 class App extends React.Component{
     constructor(props) {
