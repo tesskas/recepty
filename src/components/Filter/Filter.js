@@ -14,8 +14,8 @@ class Filter extends React.Component{
     }
 
     load(){
-        getFilterList("category").then( data => this.setState({categories: data}));
-        getFilterList("ingredience").then( data => this.setState({ingrediences: data}));
+        getFilterList("category").then( data => this.state = {categories: data});
+        getFilterList("ingredience").then( data => this.state = {ingrediences: data});
     }
 
     render(){

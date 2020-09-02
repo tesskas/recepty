@@ -1,6 +1,5 @@
 export const parse = (data) => {
-    //return JSON.parse(data.content)
-    return data.content
+    return JSON.parse(data.content)
 }
 
 export async function callApi(path){
@@ -33,6 +32,7 @@ export function getByCategory(data, categories){
     return data.filter(d => {
         if(categories.includes(d.Category))
             return d;
+        return null;
     })
 }
 
@@ -46,6 +46,7 @@ export function getByIngredience(data, ingredience){
         })
         if(n === len)
             return d;
+        return null;
     })
 }
 
