@@ -1,7 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import styles from './App.module.css';
-import Filter from "../Filter/Filter";
 import List from "../List/List";
 import {callApi, parse} from '../../api';
 import Form from "../Form/Form";
@@ -24,18 +21,10 @@ class App extends React.Component{
         callApi("/").then(data => {this.setState({go: parse(data)})})
     }
 
-    /*load =()=> {
-        getFoods().then( data => {
-            this.setState({foods: data});
-            }
-        )
-    }*/
-
     render(){
         return(
             <Router>
                 <h1>{this.state.go}</h1>
-            <h1>Změna</h1>
                 <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03"
                             aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">

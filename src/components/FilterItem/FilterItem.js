@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styles from './FilterItem.module.css';
 import {getByCategory, getByName, getByIngredience, getFoods} from "../../api";
 
@@ -13,12 +12,12 @@ class FilterItem extends React.Component{
         this.filter = this.filter.bind(this);
     }
 
-    componentDidMount() {
+    /*componentDidMount() {
         document.addEventListener('mouseover', (e) => {
             if(this.area && !this.area.current.contains(e.target))
                 this.hideChoice(e);
         });
-    }
+    }*/
 
     showChoice(e){
         const classlist = this.choice.current.classList
@@ -39,11 +38,11 @@ class FilterItem extends React.Component{
         category = Array.prototype.slice.call(f[0].getElementsByTagName("input")).filter(e => e.checked).map(e => e.getAttribute("data-name"));
         ingredience = Array.prototype.slice.call(f[1].getElementsByTagName("input")).filter(e => e.checked).map(e => e.getAttribute("data-name"));
         getFoods().then(data => {
-            if (name != null)
+            if (name !== null)
                 data = getByName(data, name);
-            if (category != null)
+            if (category !== null)
                 data = getByCategory(data, category);
-            if (ingredience != null)
+            if (ingredience !== null)
                 data = getByIngredience(data, ingredience);
             this.props.update(data);
             return data;
@@ -56,7 +55,7 @@ class FilterItem extends React.Component{
                 <input type="text" placeholder={this.props.name} onClick={this.showChoice}/>
                     <div id="filter" className={styles.choice + " invisible filter"} ref={this.choice}>
                         {
-                            this.props.list != null &&
+                            this.props.list !== null &&
                             this.props.list.map(item => {
                                 return(
                                     <div className="form-check">

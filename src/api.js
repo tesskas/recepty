@@ -1,16 +1,9 @@
 export const parse = (data) => {
     //return JSON.parse(data.content)
-    console.log(data);
     return data.content
 }
 
 export async function callApi(path){
-    /*fetch(path)
-        .then(async response => {
-            const data = await response.json();
-            //console.log("JSON: " + data.content);
-            return data.content;
-        });*/
     let response = await fetch("https://damp-springs-19376.herokuapp.com" + path);
     let data = await response.json()
     return data;
@@ -31,7 +24,7 @@ export async function getDetail(name){
 
 export function getByName(data, name){
     return data.forEach( d => {
-        if(d.Name == name)
+        if(d.Name === name)
             return d;
     })
 }
@@ -51,7 +44,7 @@ export function getByIngredience(data, ingredience){
             if(d.Ingrediences.map(x => x.Name).includes(i))
                 n++;
         })
-        if(n == len)
+        if(n === len)
             return d;
     })
 }

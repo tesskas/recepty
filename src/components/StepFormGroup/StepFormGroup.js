@@ -1,6 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import styles from './StepFormGroup.module.css';
 
 const StepFormGroup = ({step, id, handleChange}) => {
     return(

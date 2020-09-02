@@ -1,11 +1,8 @@
 import React from 'react';
-import styles from './Form.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faPlus, faMinus} from "@fortawesome/free-solid-svg-icons";
 import IngredienceFormGroup from "../IngredienceFormGroup/IngredienceFormGroup";
 import StepFormGroup from "../StepFormGroup/StepFormGroup";
-import {Redirect} from "react-router-dom";
-import {parse} from "@fortawesome/fontawesome-svg-core";
 
 class Form extends React.Component{
     constructor(props){
@@ -114,11 +111,11 @@ class Form extends React.Component{
 
     render(){
         let ingredience = [], steps = [];
-        if(this.state.food.ingrediences != undefined)
+        if(this.state.food.ingrediences !== undefined)
             ingredience = this.state.food.ingrediences.map( (i,x) =>
                 <IngredienceFormGroup ingredience={i} index={x.toString()} remove={this.removeIngredienceField} handleChange={this.handleChangeIngredience}/>
                 );
-        if(this.state.food.steps != undefined)
+        if(this.state.food.steps !== undefined)
             steps = this.state.food.steps.map((s,i) => { return(<StepFormGroup step={s.Desc} id={i} handleChange={this.handleChangeStep}/>)});
 
         return(

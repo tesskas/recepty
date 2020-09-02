@@ -1,14 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import styles from './Filter.module.css';
 import FilterItem from "../FilterItem/FilterItem";
 import {getFilterList} from "../../api";
 
 class Filter extends React.Component{
     constructor(props){
         super(props);
-        //this.categories = React.createRef();
-        //this.ingrediences = React.createRef();
         this.load = this.load.bind(this);
         this.state = {
             categories: this.props.category,

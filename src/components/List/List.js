@@ -1,10 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styles from './List.module.css';
-import {Link, Route, Switch} from "react-router-dom";
+import {Link} from "react-router-dom";
 import {getByCategory, getFoods, removeFood} from "../../api";
-import Form from "../Form/Form";
-import Detail from "../Detail/Detail";
 import Filter from "../Filter/Filter";
 
 class List extends React.Component{

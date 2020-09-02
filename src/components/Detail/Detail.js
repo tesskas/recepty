@@ -1,10 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import styles from './Detail.module.css';
 import {getDetail} from "../../api";
-import {Link, Route, Switch} from "react-router-dom";
-import Form from "../Form/Form";
-import List from "../List/List";
+import {Link} from "react-router-dom";
 
 class Detail extends React.Component{
     constructor(props) {
@@ -31,7 +27,7 @@ class Detail extends React.Component{
               <p>{this.state.food.Description}</p>
               <ul>
                   {
-                      this.state.food.ingrediences != undefined &&
+                      this.state.food.ingrediences !== undefined &&
                       this.state.food.ingrediences.map(i =>
                         <li>i.name</li>
                       )
@@ -39,7 +35,7 @@ class Detail extends React.Component{
               </ul>
               <ul>
                   {
-                      this.state.food.steps != undefined &&
+                      this.state.food.steps !== undefined &&
                       this.state.food.steps.map(s =>
                           <li>s</li>
                       )
