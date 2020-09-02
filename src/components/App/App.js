@@ -3,6 +3,7 @@ import List from "../List/List";
 import {callApi, parse} from '../../api';
 import Form from "../Form/Form";
 import Detail from "../Detail/Detail";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import {
     BrowserRouter as Router,
